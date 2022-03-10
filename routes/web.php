@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserAuth;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +19,28 @@ Route::get('/', function () {
 });
 
 Route::get('/template', function () {
+    
     return view('template');
 });
 Route::get('/compteur', function () {
     return view('compteur');
+});
+Route::post("user", [UserAuth::class, 'userLogin']);
+Route::view("login", 'login');
+Route::view("InfoPerso", 'InfoPerso');
+
+Route::get('/login', function () {
+    if (session()->has('user'))
+    {
+       return redirect('template');
+    }
+    return view('login');
+});
+
+Route::get('/logout', function () {
+    if (session()->has('user'))
+    {
+        session()->pull('user');
+    }
+    return redirect('login');
 });

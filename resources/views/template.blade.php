@@ -12,11 +12,11 @@
   </head>
   <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="/">LOGO</a>
-    <a class="navbar-brand" href="/Rapport">Rapport</a>
-    <a class="navbar-brand" href="/Praticiens">Praticiens</a>
-    <a class="navbar-brand" href="/InfoPerso">Infomations Personnel</a>
-    
+    <a class="navbar-brand" href="/"><img src="/images/logo_gsb.png" width="115" height="73" alt=""></a>
+    <a class="navbar-brand navbar-center navbar-hover" href="/Rapport">Rapport</a>
+    <a class="navbar-brand navbar-hover" href="/Praticiens">Praticiens</a>
+    <a class="navbar-brand navbar-hover" href="/InfoPerso">Infomations Personnel</a>
+    <a class="navbar-brand  navbar-fin navbar-hover" href="/logout">Logout</a>
   </nav>
   @yield('content')
 </body>
