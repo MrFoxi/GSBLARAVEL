@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RapportController;
+use App\Http\Controllers\PraticienController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('template');
 });
 
 Route::get('/template', function () {
@@ -23,3 +25,9 @@ Route::get('/template', function () {
 Route::get('/compteur', function () {
     return view('compteur');
 });
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('praticien',[PraticienController::class,'show']);
+Route::get('rapport',[RapportController::class,'show']);

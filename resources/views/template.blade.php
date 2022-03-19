@@ -13,8 +13,8 @@
   <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="/">LOGO</a>
-    <a class="navbar-brand" href="/Rapport">Rapport</a>
-    <a class="navbar-brand" href="/Praticiens">Praticiens</a>
+    <a class="navbar-brand" href="/rapport">Rapport</a>
+    <a class="navbar-brand" href="/praticien">Praticiens</a>
     <a class="navbar-brand" href="/InfoPerso">Infomations Personnel</a>
     
   </nav>
