@@ -7,7 +7,7 @@
         <div class="card">
             <div class="card-body">
                 <form action="action.php" metdod="post">
-                    <label for="label">recherche</label>
+                    <label for="label">recherche de praticien</label>
                     <input type="text" name="browser" id="browser" class="form-control"/>
                         <table class="table table-dark table-striped" id="praticien">
                             <thead>
