@@ -9,6 +9,7 @@
                 <form action="action.php" metdod="post">
                     <label for="label">recherche de praticien</label>
                     <input type="text" name="browser" id="browser" class="form-control"/>
+                    </br>
                         <table class="table table-dark table-striped" id="praticien">
                             <thead>
                                 <th>Num</th>
