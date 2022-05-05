@@ -9,5 +9,4 @@ class Praticien extends Model
 {
     // use HasFactory;
     public $table = 'praticien';
-
 }
